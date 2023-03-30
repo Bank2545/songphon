@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>สื่อการเรียนการสอนการสร้างเว็บไซต์</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <style type="text/css">
+  body {
+    background-repeat: repeat;
+    margin-left: 0px;
+    margin-right: 0px;
+    background-image: url(../image/BG.jpg);
+    background-color: #FFFFFF;
+}
+  body,td,th {
+	color: #000000;
+}
+  </style>
+	
+	<SCRIPT src="jquery-1.4.2.min.js" type=text/javascript></SCRIPT>
+	<script type="text/javascript" src="scrolltopcontrol.js"></script>
+	<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+    </script>
+</head>
+
+<body class="align-content-md-start" onLoad="MM_preloadImages('../image/น3.3.jpg','../image/น1.1.jpg','../image/น2.2.jpg','../image/น4.4.jpg','../image/น5.5.jpg','../image/น6.6.jpg','../image/น7.7.jpg','../image/น8.jpg')">
+<table width="200" border="0" align="center">
+  <tbody>
+    <tr>
+      <td align="center" valign="top"><div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner" style="width: 1280px; height: 500px;">
+    <div class="carousel-item active">
+      <img src="../image/PSD_1.1.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="../image/PSD_1.2.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="../image/PSD_1.3.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+	  </td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+	<!-- bootstrap@5.1.0 -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+    crossorigin="anonymous"></script>
+
+<table width="1283" border="0" align="center">
+    <tr>
+      <td width="282"><nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    	<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      		<span class="navbar-toggler-icon"></span>
+    	</button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        	<li class="nav-item">
+          		<a class="btn btn-outline-success" aria-current="page" href="index.html">• หน้าแรก</a>
+       		</li>
+            &nbsp;&nbsp;
+        	<li class="nav-item">
+          		<a class="btn btn-outline-success" href="page2.html">• จุดประสงค์การเรียนรู้</a>
+        	</li>
+            &nbsp;&nbsp;
+        	<li class="nav-item dropdown">
+          		<a class="btn btn-outline-success dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            • บทเรียน
+          		</a>
+       <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="page3.1.html">• บทเรียนที่ 1</a></li>
+            <li><a class="dropdown-item" href="page3.2.html">• บทเรียนที่ 2</a></li>
+		    <li><a class="dropdown-item" href="page3.3.html">• บทเรียนที่ 3</a></li>
+		    <li><a class="dropdown-item" href="page3.4.html">• บทเรียนที่ 4</a></li>
+		    <li><a class="dropdown-item" href="page3.5.html">• บทเรียนที่ 5</a></li>
+		    <li><a class="dropdown-item" href="page3.6.html">• บทเรียนที่ 6</a></li>
+		    <li><a class="dropdown-item" href="page3.7.html">• บทเรียนที่ 7</a></li>
+		    <li><a class="dropdown-item" href="page3.8.html">• บทเรียนที่ 8</a></li>
+		    <li><a class="dropdown-item" href="page3.9.html">• บทเรียนที่ 9</a></li>
+            <li><hr class="dropdown-divider"></li>
+       </ul>
+        	</li>
+		  &nbsp;&nbsp;
+		  <li class="nav-item dropdown">
+          		<a class="btn btn-outline-success dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            • คลิปการสอน
+          		</a>
+       <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="page4.1.html">• การสร้าง Site งานเว็บไซต์</a></li>
+            <li><a class="dropdown-item" href="page4.2.html">• การแทรกวิดีโอและการแทรกแผนที่</a></li>
+		    <li><a class="dropdown-item" href="page4.3.html">• การเชื่อมโยงเว็บเพจ</a></li>
+		    <li><a class="dropdown-item" href="page4.4.html">• การสร้าง Spry menu Bar</a></li>
+		    <li><a class="dropdown-item" href="page4.5.html">• การสร้างปุ่ม Rollover</a></li>
+            <li><hr class="dropdown-divider"></li>
+       </ul>
+        	</li>
+            &nbsp;&nbsp;
+        	<li class="nav-item">
+         		 <a class="btn btn-outline-success" href="page5.html">• ติดต่อเรา</a>
+       		</li>
+      </ul>
+    </div>
+  </div>
+</nav>
+	  </td>
+    </tr>
+</table>
+<table width="1282" height="1773" border="0" align="center">
+  <tr>
+    <td width="275" height="1573" align="center" valign="top" bgcolor="#FFFFFF">
+    <div style="overflow:auto; height:4000px; width:220px;">
+    <center>
+      <table width="0" border="0">
+      <br>
+        <tr>
+          <td><a href="page3.1.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('น1','','../image/น1.1.jpg',1)"><img src="../image/น1.jpg" width="180" height="240" id="น1"></a></td>
+        </tr>
+        <tr>
+          <td><a href="page3.2.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('น2','','../image/น2.2.jpg',1)"><img src="../image/น2.jpg" width="180" height="240" id="น2"></a></td>
+        </tr>
+        <tr>
+          <td><a href="page3.3.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('น3','','../image/น3.3.jpg',0)"><img src="../image/น3.jpg" width="180" height="240" id="น3"></a></td>
+        </tr>
+        <tr>
+          <td><a href="page3.4.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('น4','','../image/น4.4.jpg',1)"><img src="../image/น4.jpg" width="180" height="240" id="น4"></a></td>
+        </tr>
+        <tr>
+          <td><a href="page3.5.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('น5','','../image/น5.5.jpg',1)"><img src="../image/น5.jpg" width="180" height="240" id="น5"></a></td>
+        </tr>
+        <tr>
+          <td><a href="page3.6.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('น6','','../image/น6.6.jpg',1)"><img src="../image/น6.jpg" width="180" height="240" id="น6"></a></td>
+        </tr>
+        <tr>
+          <td><a href="page3.7.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('น7','','../image/น7.7.jpg',1)"><img src="../image/น7.jpg" width="180" height="240" id="น7"></a></td>
+        </tr>
+        <tr>
+          <td><a href="page3.8.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('น8','','../image/น8.jpg',1)"><img src="../image/น8.8.jpg" width="180" height="240" id="น8"></a></td>
+        </tr>
+        <tr>
+          <td><a href="page3.9.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('น9','','../image/น9.9.jpg',1)"><img src="../image/น9.jpg" width="180" height="240" id="น9"></a></td>
+        </tr>
+        <tr>
+          <td><a href="page3.10.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('น10','','../image/น10.10.jpg',1)"><img src="../image/น10.jpg" width="180" height="240" id="น10"></a></td>
+        </tr>
+        <tr>
+          <td><a href="page4.1.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('ค1','','../image/ค1.1.jpg',1)"><img src="../image/ค1.jpg" width="180" height="240" id="ค1"></a></td>
+        </tr>
+        <tr>
+          <td><a href="page4.2.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('ค2','','../image/ค2.2.jpg',1)"><img src="../image/ค2.jpg" name="ค2" width="180" height="240" id="ค2"></a></td>
+        </tr>
+        <tr>
+          <td><a href="page4.3.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('ค3','','../image/ค3.3.jpg',1)"><img src="../image/ค3.jpg" name="ค3" width="180" height="240" id="ค3"></a></td>
+        </tr>
+        <tr>
+          <td><a href="page4.4.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('ค4','','../image/ค4.4.jpg',1)"><img src="../image/ค4.jpg" width="180" height="240" id="ค4"></a></td>
+        </tr>
+        <tr>
+          <td><a href="page4.5.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('ค5','','../image/ค5.5.jpg',0)"><img src="../image/ค5.jpg" name="ค5" width="180" height="240" id="ค5"></a></td>
+        </tr>
+        
+      </table>
+      
+      <p>&nbsp;</p>
+    
+    </center>
+      </div>
+      
+      
+      
+      
+      
+    </td>
+    
+    
+    <td width="1001" align="left" valign="top" bgcolor="#FFFFFF"><p>&nbsp;&nbsp;</p>
+    <h3 class="post-title entry-title" itemprop="name"><span class="post-body entry-content"><b><span lang="TH" style="color: #CC33FF; font-family: &quot;th sarabunpsk&quot; , &quot;sans-serif&quot;; font-size: 16.0pt;">หน่วยการเรียนรู้ที่ 4 การใส่ข้อความลงในเว็บเพจ</span></b><span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">
+    <o:p></o:p>
+</span></span></h3>
+<div class="post-header">
+<div class="post-header-line-1"></div>
+</div>
+<div class="post-body entry-content" id="post-body-5531264328923458801" itemprop="description articleBody">
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<b><span lang="TH" style="color: green; font-family: &quot;th sarabunpsk&quot; , &quot;sans-serif&quot;; font-size: 16.0pt;">เริ่มต้นใส่ข้อความ</span></b><br>
+<b><span lang="TH" style="color: green; font-family: &quot;th sarabunpsk&quot; , &quot;sans-serif&quot;; font-size: 16.0pt;"></span></b></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span lang="TH">ข้อความนับว่าเป็นข้อมูลพื้นฐานในการสื่อสารถึงผู้เข้าชมเว็บไซต์
+การใส่ข้อความบนหน้าเว็บเพจ สามารถกระทำได้เหมือนกับการพิมพ์ในโปรแกรม </span>Microsoft
+Word <span lang="TH">โดยสามารถพิมพ์บนหน้าเว็บเพจได้เลย</span></span><br>
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;"><span lang="TH"><br></span></span></div>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="../image/4.1.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="144" src="../image/4.1.jpg" width="320"></a></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<br>
+<br></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 1. <span lang="TH">คลิกวางเคอร์เซอร์ตรงตำแหน่งที่ต้องการพิมพ์ข้อความ</span><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2. <span lang="TH">พิมพ์ข้อความที่ต้องการ</span><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<br></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<b><span style="color: #ff6600; font-family: &quot;th sarabunpsk&quot; , &quot;sans-serif&quot;; font-size: 16.0pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span lang="TH">การขึ้นบรรทัดใหม่</span></span></b><span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;"><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span lang="TH">การขึ้นบรรทัดใหม่ ใช้วิธีกดปุ่ม </span>Enter <span lang="TH">จะเว้นบรรทัดที่ว่างก่อนและหลังให้
+</span>1 <span lang="TH">บรรทัด</span><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<br></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<b><span style="color: #ff6600; font-family: &quot;th sarabunpsk&quot; , &quot;sans-serif&quot;; font-size: 16.0pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span lang="TH">การขึ้นบรรทัดใหม่ไม่ต้องเว้นที่ว่าง</span></span></b><span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;"><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span lang="TH">ถ้าต้องการให้การขึ้นบรรทัดใหม่โดยไม่ต้องเว้นที่ว่าง
+ให้คลิกหน้าข้อความหรือบรรทัดที่ต้องการจะขึ้นบรรทัดใหม่แล้วกดปุ่ม </span>Shift <span lang="TH">พร้อมกับกดปุ่ม </span>Enter<o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<br></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;</span><b><span style="color: green; font-family: &quot;th sarabunpsk&quot; , &quot;sans-serif&quot;; font-size: 16.0pt;"><span lang="TH">การตกแต่งและจัดรูปแบบให้ข้อความ</span></span></b></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<br></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span lang="TH">เมื่อพิมพ์ข้อความลงในเว็บเพจแล้ว การเลือกข้อความ
+เพื่อจัดการกับข้อความนั้น ๆ เช่น กำหนดรูปแบบของตัวอักษร การลบ คัดลอก ย้าย ฯลฯ
+มีรายละเอียดดังนี้</span><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<br></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span><b><span style="color: #ff6600; font-family: &quot;th sarabunpsk&quot; , &quot;sans-serif&quot;; font-size: 16.0pt;">&nbsp;1. <span lang="TH">การเลือกข้อความ</span></span></b></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+</div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<b><span style="color: blue; font-family: &quot;th sarabunpsk&quot; , &quot;sans-serif&quot;; font-size: 16.0pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+- <span lang="TH">เลือกข้อความเฉพาะส่วนที่ต้องการ</span></span></b><span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;"><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<b><span style="color: blue; font-family: &quot;th sarabunpsk&quot; , &quot;sans-serif&quot;; font-size: 16.0pt;"><span lang="TH"><br></span></span></b></div>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="../image/4.2.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="96" src="../image/4.2.jpg" width="320"></a></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<br></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;1. <span lang="TH">คลิกเมาส์วางเคอร์เซอร์หน้าข้อความและลากเมาส์ไปจนถึงคำสุดท้ายแล้วปล่อยเมาส์</span><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2. <span lang="TH">บริเวณเมาส์ลากผ่านจะมีแถบสีดำขึ้นมา</span><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<br></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+</div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<b><span style="color: blue; font-family: &quot;th sarabunpsk&quot; , &quot;sans-serif&quot;; font-size: 16.0pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+- <span lang="TH">เลือกข้อความทั้งหมด</span></span></b></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<b><span style="color: blue; font-family: &quot;th sarabunpsk&quot; , &quot;sans-serif&quot;; font-size: 16.0pt;"><span lang="TH"><br></span></span></b></div>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="../image/4.3.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="92" src="../image/4.3.jpg" width="320"></a></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<br></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;1. <span lang="TH">คลิกที่เมนู </span>Edit<o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2. <span lang="TH">เลือก </span>Select All <span lang="TH">หรือ </span>Ctrl +&nbsp;
+A<o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+3. <span lang="TH">ข้อความทั้งหมดจะถูกเลือก โดยเป็นแถบสีดำคลุมข้อความ</span><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+</div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;</span><b><u><span lang="TH" style="color: red; font-family: &quot;th sarabunpsk&quot; , &quot;sans-serif&quot;; font-size: 16.0pt;">หมายเหต</span></u></b><b><span lang="TH" style="color: red; font-family: &quot;th sarabunpsk&quot; , &quot;sans-serif&quot;; font-size: 16.0pt;">ุ</span></b><b><span style="color: red; font-family: &quot;th sarabunpsk&quot; , &quot;sans-serif&quot;; font-size: 16.0pt;">&nbsp;</span></b><span lang="TH" style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">ถ้าต้องการยกเลิกการเลือกเอกสาร
+ทำได้โดยคลิกพื้นที่ว่างบนหน้าเว็บเพจ</span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<a href="https://www.blogger.com/blogger.g?blogID=6213038047236223212" imageanchor="1" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;"></a><span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;</span><b><span style="color: #ff6600; font-family: &quot;th sarabunpsk&quot; , &quot;sans-serif&quot;; font-size: 16.0pt;">2. <span lang="TH">การตกแต่งและจัดรูปแบบของข้อความ</span></span></b></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<br></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span lang="TH">ข้อความที่พิมพ์ลงในเว็บเพจ สามารถจัดรูปแบบของข้อความ เช่น
+กำหนดรูปแบบตัวอักษร ขนาด สี ลักษณะตัวอักษร รวมไปถึงการจัดตำแหน่งของข้อความ
+เพื่อเพิ่มความสวยงามหรือเน้นความสำคัญ มีวิธีการดังนี้</span><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<br></div>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="../image/4.4.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="211" src="../image/4.4.jpg" width="320"></a></div>
+<br>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;1. <span lang="TH">เลือกข้อความที่ต้องการตกแต่งหรือจัดรูปแบบของข้อความ</span><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2. <span lang="TH">เครื่องมือสำหรับจัดรูปแบบข้อความใน </span>Properties Inspector
+<span lang="TH">ซึ่งมีให้เลือก </span>2 <span lang="TH">รูปแบบ คือ แบบ </span>HTML <span lang="TH">และแบบ </span>CSS <span lang="TH">ดังนี้</span><o:p></o:p></span></div>
+<div align="center" class="MsoNormal" style="margin-bottom: 0.0001pt; text-align: center;">
+<br></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+</div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<b><span style="color: blue; font-family: &quot;th sarabunpsk&quot; , &quot;sans-serif&quot;; font-size: 16.0pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+- <span lang="TH">จัดรูปแบบด้วย </span>HTML</span></b><span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;"><o:p></o:p></span><br>
+<b><span style="color: blue; font-family: &quot;th sarabunpsk&quot; , &quot;sans-serif&quot;; font-size: 16.0pt;"><br></span></b></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<b><span style="color: blue; font-family: &quot;th sarabunpsk&quot; , &quot;sans-serif&quot;; font-size: 16.0pt;"><br></span></b></div>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="../image/4.5.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="79" src="../image/4.5.jpg" width="320"></a></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<br></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<b><span lang="TH" style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;หมายเลข </span></b><b><span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">1</span></b><span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;: <span lang="TH">เปิดการทำงานกับ </span>HTML<o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<b><span lang="TH">หมายเลข </span>2</b>&nbsp;: Format : <span lang="TH">เลือกรูปแบบหัวข้อ </span>Heading
+(<span lang="TH">ขนาดตัวอักษร) ระดับ </span>1-6<o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<b><span lang="TH">หมายเลข </span>3</b>&nbsp;: Class : <span lang="TH">ดึงสไตล์ของ </span>CSS
+<span lang="TH">มาใช้กับข้อความ</span><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b><span lang="TH">หมายเลข </span>4</b>&nbsp;: <span lang="TH">กำหนดลักษณะตัวอักษรให้เป็นตัวหนา</span><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<b><span lang="TH">หมายเลข </span>5</b>&nbsp;: <span lang="TH">กำหนดลักษณะตัวอักษรให้เป็นตัวเอียง</span><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<b><span lang="TH">หมายเลข </span>6</b>&nbsp;: <span lang="TH">ใส่ </span>Bullet <span lang="TH">หรือหัวข้อย่อย</span><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<b><span lang="TH">หมายเลข </span>7</b>&nbsp;: <span lang="TH">จัดย่อหน้าของข้อความ</span><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<br></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+</div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<b><span style="color: blue; font-family: &quot;th sarabunpsk&quot; , &quot;sans-serif&quot;; font-size: 16.0pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+- <span lang="TH">จัดรูปแบบด้วย </span>CSS</span></b><span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;"><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="color: blue; font-family: &quot;th sarabunpsk&quot; , sans-serif;"><span style="font-size: 21.3333339691162px;"><b><br></b></span></span></div>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="../image/4.6.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="196" src="../image/4.6.jpg" width="320"></a></div>
+<div class="separator" style="clear: both; text-align: center;">
+<br></div>
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<b><span lang="TH" style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;หมายเลข </span></b><b><span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">1</span></b><span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;: <span lang="TH">เปิดการทำงานกับ </span>CSS<o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b><span lang="TH">หมายเลข </span>2</b>&nbsp;: Targeted Rule :<span lang="TH">สร้างหรือกำหนดสไตล์
+</span>CSS<o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b><span lang="TH">หมายเลข </span>3</b>&nbsp;: Font : <span lang="TH">เลือกรูปแบบของตัวอักษร</span><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b><span lang="TH">หมายเลข </span>4</b>&nbsp;: Size : <span lang="TH">ขนาดของตัวอักษร</span><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b><span lang="TH">หมายเลข </span>5</b>&nbsp;: <span lang="TH">สีของตัวอักษร</span><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b><span lang="TH">หมายเลข </span>6</b>&nbsp;: <span lang="TH">กำหนดลักษณะตัวอักษรให้เป็นตัวหนา</span><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b><span lang="TH">หมายเลข </span>7</b>&nbsp;: <span lang="TH">กำหนดลักษณะตัวอักษรให้เป็นตัวเอียง</span><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b><span lang="TH">หมายเลข </span>8</b>&nbsp;: <span lang="TH">จัดตำแหน่งของข้อความ เช่น
+ชิดซ้าย กึ่งกลาง ชิดขวา จัดให้ตรงกันทั้งซ้ายและขวา</span><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<br></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="color: red; font-family: &quot;th sarabunpsk&quot; , &quot;sans-serif&quot;; font-size: 16.0pt;">&nbsp;&nbsp;&nbsp;<b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u><span lang="TH">หมายเหตุ</span></u></b></span><span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;"><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b><span lang="TH">หมายเลข </span>2</b>&nbsp;: Targeted Rule : <span lang="TH">สร้างหรือกำหนดสไตล์
+</span>CSS<o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+- <span lang="TH">ถ้าเลือก</span> &lt;New Inline Style&gt; <span lang="TH">คุณสมบัติที่กำหนดจะมีผลต่อข้อความที่เลือกทันที</span><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+- <span lang="TH">ถ้าเลือก</span> &lt;New CSS Rule&gt; <span lang="TH">จะเป็นการสร้าง
+</span>CSS <span lang="TH">ใหม่ ซึ่งสามารถนำไปใช้ซ้ำได้ มีวิธีการดังนี้</span><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+</div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<br></div>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://www.blogger.com/blogger.g?blogID=6213038047236223212" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"></a><a href="../image/4.7.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="205" src="../image/4.7.jpg" width="320"></a></div>
+<div class="" style="clear: both; text-align: center;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp; &nbsp; &nbsp;</span></div>
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span style="font-size: large;">&nbsp;1. <span lang="TH">เลือกข้อความ</span></span><o:p></o:p><br>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;2. <span lang="TH">ช่อง </span>Targeted Rule <span lang="TH">เลือก</span> &lt;New
+CSS Rule&gt;<o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+3. <span lang="TH">ตกแต่งหรือจัดรูปแบบตาม หมายเลข </span>3-8 (<span lang="TH">กรณีนี้
+สาธิตการกำหนดสีของตัวอักษร)</span><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+</div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<br></div>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="../image/4.8.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="252" src="../image/4.8.jpg" width="320"></a></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<br></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;4. <span lang="TH">ช่อง </span>Selector Name <span lang="TH">ให้พิมพ์ชื่อที่เราต้องการสร้างเป็น
+</span>CSS<o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+5. <span lang="TH">ช่อง </span>Rule Definition <span lang="TH">เลือก (</span>This
+document only) <span lang="TH">เพื่อกำหนดเฉพาะข้อความที่เลือกไว้</span><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+6. <span lang="TH">คลิกที่ปุ่ม </span>OK <span lang="TH">เพื่อบันทึก</span><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+</div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+7. <span lang="TH">ผลจากการจัดรูปแบบด้วย </span>CSS<o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;"><br></span></div>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="../image/4.10.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="216" src="../image/4.10.jpg" width="320"></a></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<br></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<b><span lang="TH" style="color: green; font-family: &quot;th sarabunpsk&quot; , &quot;sans-serif&quot;; font-size: 16.0pt;">การแทรกสัญลักษณ์พิเศษลงในเว็บเพจ</span></b><span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;"><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<br></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+</div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span lang="TH">การแทรกสัญลักษณ์พิเศษลงในเว็บเพจ เช่น สกุลเงิน
+หรือสัญลักษณ์แสดงลิขสิทธิ์ต่าง ๆ มีวิธีการดังนี้</span><o:p></o:p></span><br>
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;"><span lang="TH"><br></span></span></div>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="../image/4.11.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="231" src="../image/4.11.jpg" width="320"></a></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<br></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;1. <span lang="TH">คลิกวางเคอร์เซอร์ตรงตำแหน่งที่ต้องการวางสัญลักษณ์</span><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2. <span lang="TH">คลิกที่เมนู </span>Window <span lang="TH">แล้วเลือก </span>Insert
+(<span lang="TH">สังเกตต้องมีเครื่องหมายถูก อยู่ด้านหน้า </span>Insert)<o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+3. Insert Panel <span lang="TH">เลือก </span>Text<o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+4. <span lang="TH">คลิกที่ปุ่ม </span>Characters <span lang="TH">แล้วเลือกสัญลักษณ์ที่ต้องการ</span><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<br></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<b><span style="color: green; font-family: &quot;th sarabunpsk&quot; , &quot;sans-serif&quot;; font-size: 16.0pt;"><span lang="TH">การนำเอกสารอื่นมาใช้ร่วมกับ </span>Dreamweaver
+CS6</span></b><span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;"><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<br></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Adobe Dreamweaver CS6 <span lang="TH">สามารถนำข้อมูลจากโปรแกรมอื่น ๆ เช่น </span>Microsoft
+Word , Excel , PowerPoint <span lang="TH">มีวิธีการดังนี้</span><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<br></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+</div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<b><span style="color: #ff6600; font-family: &quot;th sarabunpsk&quot; , &quot;sans-serif&quot;; font-size: 16.0pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+1. <span lang="TH">การใช้ </span>Import</span></b><span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;"><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="color: blue; font-family: &quot;th sarabunpsk&quot; , sans-serif;"><span style="font-size: 21.3333339691162px;"><b><br></b></span></span></div>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="../image/4.12.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="79" src="../image/4.12.jpg" width="320"></a></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<br></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 1. <span lang="TH">คลิกวางเคอร์เซอร์ตรงตำแหน่งที่ต้องการนำเข้าไฟล์เอกสาร</span><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+</div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<br></div>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="../image/4.13.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="202" src="../image/4.13.jpg" width="320"></a></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<br></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2. <span lang="TH">คลิกที่เมนู
+</span>File<o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+3. <span lang="TH">คลิกที่ </span>Import <span lang="TH">แล้วเลือกประเภทไฟล์นำเข้า
+(กรณีนี้ เลือกเป็นไฟล์ </span>Word)<o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+</div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<br></div>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="../image/4.14.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="280" src="../image/4.14.jpg" width="320"></a></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<br></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 4. <span lang="TH">เลือกโฟลเดอร์ที่อยู่ของไฟล์เอกสาร</span><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+5. <span lang="TH">เลือกไฟล์ที่ต้องการ</span><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+6. <span lang="TH">คลิกที่ปุ่ม </span>Open<o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+7. <span lang="TH">รายละเอียดของไฟล์ทั้งหมด (ทั้งข้อความและภาพ)
+จะถูกนำเข้ามาในเว็บเพจ ดังรูป</span><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+</div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<br></div>
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="../image/4.15.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="219" src="../image/4.15.jpg" width="320"></a></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<br></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<b><span style="color: #ff6600; font-family: &quot;th sarabunpsk&quot; , &quot;sans-serif&quot;; font-size: 16.0pt; line-height: 115%;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;2. <span lang="TH">การคัดลอกข้อมูลจากไฟล์เอกสาร</span></span></b></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<b><span style="color: #ff6600; font-family: &quot;th sarabunpsk&quot; , &quot;sans-serif&quot;; font-size: 16.0pt; line-height: 115%;"><span lang="TH"><br></span></span></b></div>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="../image/4.16.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="181" src="../image/4.16.jpg" width="320"></a></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<br></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt; line-height: 115%;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;1. <span lang="TH">เปิดไฟล์เอกสารที่ต้องการ
+แล้วเลือกข้อความหรือเนื้อหาที่ต้องการคัดลอก จากนั้นให้คัดลอก หรือกดปุ่ม </span>Ctrl
++ C</span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt; line-height: 115%;"><br></span></div>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="../image/4.17.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="139" src="../image/4.17.jpg" width="320"></a></div>
+<div class="separator" style="clear: both; text-align: center;">
+<br></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<br></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2. <span lang="TH">นำเนื้อหาที่คัดลอกวางลงในโปรแกรม
+</span>Adobe Dreamweaver <span lang="TH">โดยคลิกเคอร์เซอร์ตรงตำแหน่งที่ต้องการวางข้อความ
+จากนั้นคลิกที่เมนู </span>Edit <span lang="TH">เลือก </span>Pate <span lang="TH">หรือกดปุ่ม
+</span>Ctrl + V<o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+</div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+3. <span lang="TH">จะได้เนื้อหาตามที่ต้องการ (ทั้งข้อความและรูปภาพ)</span><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;"><span lang="TH"><br></span></span></div>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="../image/4.18.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="155" src="../image/4.18.jpg" width="320"></a></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<b><span style="color: #ff6600; font-family: &quot;th sarabunpsk&quot; , &quot;sans-serif&quot;; font-size: 16.0pt; line-height: 115%;"><span lang="TH"><br></span></span></b></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<b><span style="color: #ff6600; font-family: &quot;th sarabunpsk&quot; , &quot;sans-serif&quot;; font-size: 16.0pt; line-height: 115%;"><span lang="TH"><br></span></span></b></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<b><span style="color: #ff6600; font-family: &quot;th sarabunpsk&quot; , &quot;sans-serif&quot;; font-size: 16.0pt; line-height: 115%;"><span lang="TH"><br></span></span></b></div>
+
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+</div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;"><o:p></o:p></span></div>
+<div style="clear: both;"></div>
+</div>
+
+<br>
+<div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm;">
+</div>
+<div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm;">
+<span style="color: black; font-family: &quot;th sarabunpsk&quot; , &quot;sans-serif&quot;; font-size: 16.0pt;"></span></div>
+<br>
+<div class="MsoNormal" style="line-height: normal; margin-bottom: 0.0001pt; text-align: left;">
+</div>
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm;">
+</div>
+<div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm;">
+<span style="color: black; font-family: &quot;th sarabunpsk&quot; , &quot;sans-serif&quot;; font-size: 16.0pt;"></span></div>
+<br>
+<div class="separator" style="clear: both; text-align: left;">
+</div>
+<div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm;">
+</div>
+<div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm;">
+<span style="color: black; font-family: &quot;th sarabunpsk&quot; , &quot;sans-serif&quot;; font-size: 16.0pt;"></span></div>
+<br>
+<div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm;">
+</div>
+<div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm;">
+</div>
+<div class="separator" style="clear: both; text-align: left;">
+</div>
+<div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm;">
+<span style="color: black; font-family: &quot;th sarabunpsk&quot; , &quot;sans-serif&quot;; font-size: 16.0pt;"></span></div>
+<br>
+<div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm;">
+</div>
+<div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm;">
+</div>
+<div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm;">
+</div>
+<div style="clear: both;"></div>
+</div>
+
+
+</td>
+  </tr>
+  
+  
+  
+  
+  
+  
+  
+  <tr>
+    <td height="113" colspan="2" align="center" bgcolor="#FFFFFF"><img src="../image/ล่าง.jpg" width="1280" height="328" usemap="#Map"></td>
+  </tr>
+</table>
+
+<map name="Map">
+  <area shape="rect" coords="394,58,431,74" href="index.html">
+  <area shape="rect" coords="394,86,535,103" href="page2.html">
+  <area shape="rect" coords="394,113,440,130" href="page3.1.html">
+  <area shape="rect" coords="394,139,486,158" href="page4.1.html">
+  <area shape="rect" coords="667,58,731,75" href="page5.html">
+  <area shape="rect" coords="988,253,1028,294" href="https://www.facebook.com/bankbow200858/">
+  <area shape="rect" coords="940,253,982,293" href="https://line.me/ti/p/UYBHxlnRK-">
+</map>
+</body>
+
+
+
+
+
+
+
+</html>

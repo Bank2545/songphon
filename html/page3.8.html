@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>สื่อการเรียนการสอนการสร้างเว็บไซต์</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <style type="text/css">
+  body {
+    background-repeat: repeat;
+    margin-left: 0px;
+    margin-right: 0px;
+    background-image: url(../image/BG.jpg);
+    background-color: #FFFFFF;
+}
+  body,td,th {
+	color: #000000;
+}
+  </style>
+	
+	<SCRIPT src="jquery-1.4.2.min.js" type=text/javascript></SCRIPT>
+	<script type="text/javascript" src="scrolltopcontrol.js"></script>
+	<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+    </script>
+</head>
+
+<body class="align-content-md-start" onLoad="MM_preloadImages('../image/น3.3.jpg','../image/น1.1.jpg','../image/น2.2.jpg','../image/น4.4.jpg','../image/น5.5.jpg','../image/น6.6.jpg','../image/น7.7.jpg','../image/น8.jpg')">
+<table width="200" border="0" align="center">
+  <tbody>
+    <tr>
+      <td align="center" valign="top"><div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner" style="width: 1280px; height: 500px;">
+    <div class="carousel-item active">
+      <img src="../image/PSD_1.1.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="../image/PSD_1.2.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="../image/PSD_1.3.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+	  </td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+	<!-- bootstrap@5.1.0 -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+    crossorigin="anonymous"></script>
+
+<table width="1283" border="0" align="center">
+    <tr>
+      <td width="282"><nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    	<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      		<span class="navbar-toggler-icon"></span>
+    	</button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        	<li class="nav-item">
+          		<a class="btn btn-outline-success" aria-current="page" href="index.html">• หน้าแรก</a>
+       		</li>
+            &nbsp;&nbsp;
+        	<li class="nav-item">
+          		<a class="btn btn-outline-success" href="page2.html">• จุดประสงค์การเรียนรู้</a>
+        	</li>
+            &nbsp;&nbsp;
+        	<li class="nav-item dropdown">
+          		<a class="btn btn-outline-success dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            • บทเรียน
+          		</a>
+       <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="page3.1.html">• บทเรียนที่ 1</a></li>
+            <li><a class="dropdown-item" href="page3.2.html">• บทเรียนที่ 2</a></li>
+		    <li><a class="dropdown-item" href="page3.3.html">• บทเรียนที่ 3</a></li>
+		    <li><a class="dropdown-item" href="page3.4.html">• บทเรียนที่ 4</a></li>
+		    <li><a class="dropdown-item" href="page3.5.html">• บทเรียนที่ 5</a></li>
+		    <li><a class="dropdown-item" href="page3.6.html">• บทเรียนที่ 6</a></li>
+		    <li><a class="dropdown-item" href="page3.7.html">• บทเรียนที่ 7</a></li>
+		    <li><a class="dropdown-item" href="page3.8.html">• บทเรียนที่ 8</a></li>
+		    <li><a class="dropdown-item" href="page3.9.html">• บทเรียนที่ 9</a></li>
+			<li><a class="dropdown-item" href="page3.10.html">• บทเรียนที่ 10</a></li>
+            <li><hr class="dropdown-divider"></li>
+       </ul>
+        	</li>
+		  &nbsp;&nbsp;
+		 <li class="nav-item dropdown">
+          		<a class="btn btn-outline-success dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            • คลิปการสอน
+          		</a>
+       <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="page4.1.html">• การสร้าง Site งานเว็บไซต์</a></li>
+            <li><a class="dropdown-item" href="page4.2.html">• การแทรกวิดีโอและการแทรกแผนที่</a></li>
+		    <li><a class="dropdown-item" href="page4.3.html">• การเชื่อมโยงเว็บเพจ</a></li>
+		    <li><a class="dropdown-item" href="page4.4.html">• การสร้าง Spry menu Bar</a></li>
+		    <li><a class="dropdown-item" href="page4.5.html">• การสร้างปุ่ม Rollover</a></li>
+            <li><hr class="dropdown-divider"></li>
+       </ul>
+        	</li>
+            &nbsp;&nbsp;
+        	<li class="nav-item">
+         		 <a class="btn btn-outline-success" href="page5.html">• ติดต่อเรา</a>
+       		</li>
+      </ul>
+    </div>
+  </div>
+</nav>
+	  </td>
+    </tr>
+</table>
+<table width="1282" height="1773" border="0" align="center">
+  <tr>
+    <td width="275" height="1573" align="center" valign="top" bgcolor="#FFFFFF">
+    <div style="overflow:auto; height:4000px; width:220px;">
+    <center>
+      <table width="0" border="0">
+      <br>
+        <tr>
+          <td><a href="page3.1.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('น1','','../image/น1.1.jpg',1)"><img src="../image/น1.jpg" width="180" height="240" id="น1"></a></td>
+        </tr>
+        <tr>
+          <td><a href="page3.2.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('น2','','../image/น2.2.jpg',1)"><img src="../image/น2.jpg" width="180" height="240" id="น2"></a></td>
+        </tr>
+        <tr>
+          <td><a href="page3.3.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('น3','','../image/น3.3.jpg',0)"><img src="../image/น3.jpg" width="180" height="240" id="น3"></a></td>
+        </tr>
+        <tr>
+          <td><a href="page3.4.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('น4','','../image/น4.4.jpg',1)"><img src="../image/น4.jpg" width="180" height="240" id="น4"></a></td>
+        </tr>
+        <tr>
+          <td><a href="page3.5.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('น5','','../image/น5.5.jpg',1)"><img src="../image/น5.jpg" width="180" height="240" id="น5"></a></td>
+        </tr>
+        <tr>
+          <td><a href="page3.6.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('น6','','../image/น6.6.jpg',1)"><img src="../image/น6.jpg" width="180" height="240" id="น6"></a></td>
+        </tr>
+        <tr>
+          <td><a href="page3.7.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('น7','','../image/น7.7.jpg',1)"><img src="../image/น7.jpg" width="180" height="240" id="น7"></a></td>
+        </tr>
+        <tr>
+          <td><a href="page3.8.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('น8','','../image/น8.jpg',1)"><img src="../image/น8.8.jpg" width="180" height="240" id="น8"></a></td>
+        </tr>
+        <tr>
+          <td><a href="page3.9.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('น9','','../image/น9.9.jpg',1)"><img src="../image/น9.jpg" width="180" height="240" id="น9"></a></td>
+        </tr>
+        <tr>
+          <td><a href="page3.10.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('น10','','../image/น10.10.jpg',1)"><img src="../image/น10.jpg" width="180" height="240" id="น10"></a></td>
+        </tr>
+        <tr>
+          <td><a href="page4.1.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('ค1','','../image/ค1.1.jpg',1)"><img src="../image/ค1.jpg" width="180" height="240" id="ค1"></a></td>
+        </tr>
+        <tr>
+          <td><a href="page4.2.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('ค2','','../image/ค2.2.jpg',1)"><img src="../image/ค2.jpg" name="ค2" width="180" height="240" id="ค2"></a></td>
+        </tr>
+        <tr>
+          <td><a href="page4.3.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('ค3','','../image/ค3.3.jpg',1)"><img src="../image/ค3.jpg" name="ค3" width="180" height="240" id="ค3"></a></td>
+        </tr>
+        <tr>
+          <td><a href="page4.4.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('ค4','','../image/ค4.4.jpg',1)"><img src="../image/ค4.jpg" width="180" height="240" id="ค4"></a></td>
+        </tr>
+        <tr>
+          <td><a href="page4.5.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('ค5','','../image/ค5.5.jpg',0)"><img src="../image/ค5.jpg" name="ค5" width="180" height="240" id="ค5"></a></td>
+        </tr>
+        
+      </table>
+      
+      <p>&nbsp;</p>
+    
+    </center>
+      </div>
+      
+      
+      
+      
+      
+      
+    </td>
+    
+    
+    <td width="1001" align="left" valign="top" bgcolor="#FFFFFF"><p>&nbsp;&nbsp;</p>
+    <h3 class="post-title entry-title" itemprop="name"><span class="post-body entry-content"><b><span lang="TH" style="color: #CC33FF; font-family: &quot;th sarabunpsk&quot; , &quot;sans-serif&quot;; font-size: 16.0pt;">หน่วยการเรียนรู้ที่ 8 การออกแบบเว็บเพจด้วยเฟรม</span></b><span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">
+    <o:p></o:p>
+</span></span></h3>
+<div class="post-header">
+<div class="post-header-line-1"></div>
+</div>
+
+
+
+<div class="post-body entry-content" id="post-body-1856823958320738934" itemprop="description articleBody">
+
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<b><span lang="TH" style="color: green; font-family: &quot;th sarabunpsk&quot; , &quot;sans-serif&quot;; font-size: 16.0pt;">ลักษณะของเฟรม</span></b><span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;"><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+</div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span lang="TH">เฟรมเซต (</span>Frameset) <span lang="TH">เป็นการแบ่งหน้าเว็บเพจออกเป็นพื้นที่หลาย
+ๆ ส่วน โดยแต่ละส่วนแยกออกไปอย่างอิสระไม่ขึ้นต่อกัน การสร้างเฟรมนิยมแบ่งออกเป็น </span>2
+<span lang="TH">กลุ่ม คือ เฟรมหลัก (</span>Frameset) <span lang="TH">และเฟรมย่อย (</span>Frame)<o:p></o:p></span></div>
+<br>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="../image/8.1.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="172" src="../image/8.1.jpg" width="320"></a></div>
+<br>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<b><span style="color: #ff6600; font-family: &quot;th sarabunpsk&quot; , &quot;sans-serif&quot;; font-size: 16.0pt;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 1. <span lang="TH">เฟรมหลัก
+(</span>Frameset)</span></b><span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;<span lang="TH">เป็นกลุ่มแสดงเนื้อหาที่ไม่ได้มีการเปลี่ยนแปลงบ่อย
+หรือถูกแสดงไว้ในหน้าเว็บเพจทุก ๆ หน้า ทำหน้าที่คอยควบคุมเฟรมย่อยอีกทีหนึ่ง เช่น
+โลโก้ของเว็บ แบนเนอร์ หรือเมนูต่าง ๆ</span><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<b><span style="color: #ff6600; font-family: &quot;th sarabunpsk&quot; , &quot;sans-serif&quot;; font-size: 16.0pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. <span lang="TH">เฟรมย่อย (</span>Frame)&nbsp;</span></b><span lang="TH" style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">เป็นกลุ่มแสดงเนื้อหาจริง ๆ ของเว็บ ซึ่งเป็นหัวข้อย่อยของเฟรมหลัก</span><span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;"><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<br></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<b><span lang="TH" style="color: green; font-family: &quot;th sarabunpsk&quot; , &quot;sans-serif&quot;; font-size: 16.0pt;">การสร้างเฟรม</span></b><span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;"><o:p></o:p></span></div>
+<br>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span lang="TH">การจัดการรูปแบบของเฟรม โดยสร้างกรอบเฟรมบนหน้าเว็บขึ้นมาก่อน
+แล้วลากแบ่งเฟรมต่าง ๆ ได้ตามต้องการ มีวิธีการดังนี้</span><o:p></o:p></span></div>
+<br>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="../image/8.2.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="203" src="../image/8.2.jpg" width="320"></a></div>
+<br>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;1. <span lang="TH">คลิกที่
+</span>Visual Aids<o:p></o:p></span></div>
+<br>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2. <span lang="TH">เลือก </span>Frame Borders (<span lang="TH">เครื่องหมายถูก อยู่ด้านหน้า
+</span>Frame Borders)</span></div>
+<br>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="../image/8.3.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="203" src="../image/8.3.jpg" width="320"></a></div>
+<br>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;3. <span lang="TH">จะปรากฏขอบเฟรมบนหน้าเว็บเพจ</span><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+4. <span lang="TH">คลิกที่เมนู </span>Window<o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+5. <span lang="TH">เลือก </span>Frames<o:p></o:p></span></div>
+<br>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="../image/8.4.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="204" src="../image/8.4.jpg" width="320"></a></div>
+<br>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;6. <span lang="TH">จะปรากฎหน้าต่าง พาเนล </span>Frames <span lang="TH">เพื่อใช้ในการจัดการเฟรม</span><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+7. <span lang="TH">แบ่งหน้าเว็บเพจออกเป็นเฟรมย่อย
+โดยการเลื่อนเมาส์ไปที่เส้นขอบของเฟรมด้านบน คลิกและลากเมาส์เพื่อสร้างเฟรมเซต
+(แนวนอน)</span><o:p></o:p></span></div>
+<br>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="../image/8.5.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="202" src="../image/8.5.jpg" width="320"></a></div>
+<br>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;8. <span lang="TH">คลิกเลือกเฟรมที่ต้องการ (กรณีนี้ แบ่งเฟรมย่อยออกเป็นอีก </span>2
+<span lang="TH">เฟรม)</span><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+9. <span lang="TH">เลื่อนเมาส์ไปที่เส้นขอบของเฟรมด้านซ้ายมือ คลิกและลากเมาส์เพื่อสร้างเฟรมเซต
+(แนวตั้ง)</span><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<br></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;</span><b><span lang="TH" style="color: green; font-family: &quot;th sarabunpsk&quot; , &quot;sans-serif&quot;; font-size: 16.0pt;">การปรับแต่งเฟรม</span></b><span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;"><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<br></div>
+<br>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span lang="TH">เมื่อสร้างเฟรมไว้เรียบร้อยแล้ว หากต้องการปรับแต่งคุณสมบัติของเฟรม
+มีวิธีการดังนี้</span><o:p></o:p></span></div>
+<br>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="../image/8.6.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="172" src="../image/8.6.jpg" width="320"></a></div>
+<br>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<b><span style="color: #ff6600; font-family: &quot;th sarabunpsk&quot; , &quot;sans-serif&quot;; font-size: 16.0pt;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 1. <span lang="TH">การปรับขนาดของเฟรม</span>&nbsp;</span></b><span lang="TH" style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">ถ้าเฟรมมีขนาดใหญ่หรือเล็กเกินไป
+สามารถปรับขนาดย่อหรือขยายได้ ทั้งแนวตั้งและแนวนอน
+โดยคลิกที่เส้นเฟรมแล้วลากเมาส์ขึ้น-ลง หรือ ลากเมาส์ไปทางซ้ายมือ-ขวามือ</span><span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;"><o:p></o:p></span></div>
+<br>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="../image/8.7.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="172" src="../image/8.7.jpg" width="320"></a></div>
+<br>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<b><span style="color: #ff6600; font-family: &quot;th sarabunpsk&quot; , &quot;sans-serif&quot;; font-size: 16.0pt;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2. <span lang="TH">การเพิ่ม/ลบเฟรม</span></span></b><span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;"><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+-&nbsp;</span><b><span lang="TH" style="color: blue; font-family: &quot;th sarabunpsk&quot; , &quot;sans-serif&quot;; font-size: 16.0pt;">การเพิ่มเฟรม</span></b><span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;<span lang="TH">โดยคลิกที่เส้นขอบเฟรมด้านบน
+ด้านล่าง ด้านซ้าย หรือด้านขวา แล้วลากเมาส์มายังตำแหน่งที่ต้องการ</span></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+-&nbsp;</span><b><span lang="TH" style="color: blue; font-family: &quot;th sarabunpsk&quot; , &quot;sans-serif&quot;; font-size: 16.0pt;">การลบเฟรม</span></b><span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;<span lang="TH">โดยคลิกที่เส้นขอบเฟรม
+(ด้านใน) ที่ต้องการลบ แล้วลากออกไปที่ขอบเฟรมด้านบน ด้านล่าง ด้านซ้าย
+หรือด้านขวา เฟรมจะหายไป ดังรูป</span><o:p></o:p></span></div>
+<br>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="../image/8.8.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="203" src="../image/8.8.jpg" width="320"></a></div>
+<br>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<b><span lang="TH" style="color: green; font-family: &quot;th sarabunpsk&quot; , &quot;sans-serif&quot;; font-size: 16.0pt;">การกำหนดคุณสมบัติของเฟรม</span></b><span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;"><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<br></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span lang="TH">การปรับแต่งเฟรมจาก </span>Properties Inspector <span lang="TH">จะมีอยู่
+</span>2 <span lang="TH">ลักษณะ คือ กรอบเฟรมหลักและกรอบเฟรมย่อย มีวิธีการดังนี้</span><o:p></o:p></span></div>
+<br>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<br></div>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="../image/8.9.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="248" src="../image/8.9.jpg" width="320"></a></div>
+<br>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 1. <span lang="TH">คลิกพาเนล
+</span>Frames <span lang="TH">ที่</span>&nbsp;</span><b><span lang="TH" style="color: #ff6600; font-family: &quot;th sarabunpsk&quot; , &quot;sans-serif&quot;; font-size: 16.0pt;">กรอบเฟรมหลัก</span></b><span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;(<span lang="TH">ถ้าถูกซ่อน ให้คลิกที่เมนู </span>Window <span lang="TH">แล้วเลือก </span>Frames)<o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+-&nbsp;<b>Borders</b>&nbsp;: <span lang="TH">กำหนดให้ซ่อนหรือแสดงเส้นขอบเฟรม</span><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+-&nbsp;<b>Border width</b>&nbsp;: <span lang="TH">ความหนาของเส้นขอบเฟรม</span><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+-&nbsp;<b>Border color</b>&nbsp;: <span lang="TH">สีของเส้นขอบเฟรม</span><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+-<b>&nbsp;Row (or Row)</b>&nbsp;: <span lang="TH">ความกว้างของแถวหรือความกว้างของคอลัมน์</span><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<br></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;"></span></div>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="../image/8.10.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="209" src="../image/8.10.jpg" width="320"></a></div>
+<br><o:p></o:p>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2. <span lang="TH">คลิกพาเนล </span>Frames <span lang="TH">ที่</span>&nbsp;</span><b><span lang="TH" style="color: #ff6600; font-family: &quot;th sarabunpsk&quot; , &quot;sans-serif&quot;; font-size: 16.0pt;">กรอบเฟรมย่อย</span></b><span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;"><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+- Frame name : <span lang="TH">ชื่อเฟรม (</span></span><b><span lang="TH" style="color: red; font-family: &quot;th sarabunpsk&quot; , &quot;sans-serif&quot;; font-size: 16.0pt;">ควรตั้งชื่อเฟรมให้เรียบร้อย
+เพราะจะมีผลในเรื่องการเชื่อมโยงระหว่างเฟรม</span></b><span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">)<o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+- Src : <span lang="TH">เว็บเพจที่ใช้แสดงในเฟรม</span><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+- Scroll : <span lang="TH">กำหนดการแสดงแถบเลื่อน (</span>Scroll bar) <span lang="TH">ในเฟรมย่อย</span><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+- Margin width : <span lang="TH">ระยะห่างระหว่างเนื้อหากับขอบเฟรมด้านซ้าย</span><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+- Margin height : <span lang="TH">ระยะห่างระหว่างเนื้อหากับขอบเฟรมด้านบน</span><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+- No resize : <span lang="TH">กำหนดไม่ให้ใช้เมาส์ปรับขนาดเฟรมได้</span><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+- Borders : <span lang="TH">กำหนดให้ซ่อนหรือแสดงเส้นขอบเฟรมย่อย</span><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+- Border color : <span lang="TH">สีของเส้นขอบเฟรม</span><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<br></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;"><!--[if gte vml 1]><v:shapetype
+ id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t"
+ path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="ร&#3641;ปภาพ_x0020_14" o:spid="_x0000_i1025" type="#_x0000_t75"
+ alt="คำอธ&#3636;บาย: http://www.kruwan-d.info/images/k02-3.gif" style='width:12pt;
+ height:12pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="file:///C:\Users\Admin\AppData\Local\Temp\msohtmlclip1\01\clip_image001.gif"
+  o:title="k02-3"/>
+</v:shape><![endif]--><!--[if !vml]--><!--[endif]--></span><span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;</span><b><span lang="TH" style="color: green; font-family: &quot;th sarabunpsk&quot; , &quot;sans-serif&quot;; font-size: 16.0pt;">การแทรกเนื้อหาในเฟรม</span></b><span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;"><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<br></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span lang="TH">การใส่เนื้อหาในเฟรมแบ่งออกเป็น </span>2 <span lang="TH">ลักษณะ คือ
+การสร้างหน้าเว็บใหม่ลงในเฟรม และการนำเว็บเพจที่สร้างไว้แล้วมาลงในเฟรม
+มีวิธีการดังนี้</span><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<br></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<b><span style="color: #ff6600; font-family: &quot;th sarabunpsk&quot; , &quot;sans-serif&quot;; font-size: 16.0pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+- <span lang="TH">การสร้างหน้าเว็บใหม่ลงในเฟรม</span></span></b><span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;"><o:p></o:p></span></div>
+<br>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="../image/8.11.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="177" src="../image/8.11.jpg" width="320"></a></div>
+<br>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 1. <span lang="TH">คลิกเฟรมที่เราต้องการ</span></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2. <span lang="TH">แทรกข้อความหรือรูปภาพ ลงในเฟรมตามต้องการ จะปรากฏดังรูป</span></span></div>
+<br>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="../image/8.12.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="177" src="../image/8.12.jpg" width="320"></a></div>
+<br>
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<b><span style="color: #ff6600; font-family: &quot;th sarabunpsk&quot; , &quot;sans-serif&quot;; font-size: 16.0pt;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; - <span lang="TH">การนำเว็บเพจที่สร้างไว้แล้วมาลงในเฟรม</span></span></b><span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;"><o:p></o:p></span></div>
+<br>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="../image/8.13.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="175" src="../image/8.13.jpg" width="320"></a></div>
+<br>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span lang="TH" style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">ควรสร้างเนื้อหาของเว็บเพจให้เสร็จก่อน
+(ไฟล์ </span><span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">html) <span lang="TH">แล้วจึงนำมาประกอบเว็บเพจในภายหลัง
+มีวิธีการดังนี้</span><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;"><span lang="TH"><br></span></span></div>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="../image/8.14.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="177" src="../image/8.14.jpg" width="320"></a></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<br></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. <span lang="TH">คลิกเฟรมที่เราต้องการแทรกเว็บเพจ</span><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. <span lang="TH">คลิกพาเนล </span>Frames <span lang="TH">ที่กรอบเฟรมย่อย</span></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. <span lang="TH">ช่อง </span>Src <span lang="TH">คลิกที่ปุ่ม </span>Browse<o:p></o:p></span></div>
+<br>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="../image/8.15.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="249" src="../image/8.15.jpg" width="320"></a></div>
+<br>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4. <span lang="TH">จะปรากฏหน้าต่าง
+</span>Select HTML File <span lang="TH">ให้เลือกโฟลเดอร์ที่เก็บไฟล์เว็บเพจ</span>
+<o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+5. <span lang="TH">เลือกไฟล์ที่ต้องการ</span><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+6. <span lang="TH">คลิกที่ปุ่ม </span>OK<o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+7.&nbsp;<span lang="TH">จะปรากฏเว็บเพจในเฟรม ดังรูป</span></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<br></div>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="../image/8.16.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="177" src="../image/8.16.jpg" width="320"></a></div>
+<br>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;"><!--[if gte vml 1]><v:shapetype
+ id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t"
+ path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="ร&#3641;ปภาพ_x0020_7" o:spid="_x0000_i1025" type="#_x0000_t75"
+ alt="คำอธ&#3636;บาย: http://www.kruwan-d.info/images/k02-3.gif" style='width:12pt;
+ height:12pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="file:///C:\Users\Admin\AppData\Local\Temp\msohtmlclip1\01\clip_image001.gif"
+  o:title="k02-3"/>
+</v:shape><![endif]--><!--[if !vml]--><!--[endif]--></span><span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;</span><b><span lang="TH" style="color: green; font-family: &quot;th sarabunpsk&quot; , &quot;sans-serif&quot;; font-size: 16.0pt;">การเชื่อมโยงระหว่างเฟรม</span></b><span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;"><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<br></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span lang="TH">การเชื่อมโยงระหว่างเฟรมมีประโยชน์มาก
+เพราะเฟรมแต่ละเฟรมในเฟรมเซตสามารถเรียกแสดงเว็บเพจได้ ซึ่งมักจะอยู่ในเฟรมหลัก
+(เฟรมที่ตายตัว) ส่วนใหญ่จะอยู่ด้านบน (</span>top) <span lang="TH">หรือด้านซ้ายมือ
+(</span>left) <span lang="TH">เมื่อคลิกลิงค์เหล่านั้นแล้ว
+หน้าเว็บเพจที่ต้องการจะไปปรากฏทางขวามือ (</span>body)</span></div>
+<br>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="../image/8.17.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="176" src="../image/8.17.jpg" width="320"></a></div>
+<br>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. <span lang="TH">เลือกข้อความหรือรูปภาพในเฟรมที่ต้องการใช้เป็นจุดเชื่อมโยง</span></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. <span lang="TH">ส่วน </span>Properties Inspector <span lang="TH">ช่อง </span>Link
+<span lang="TH">ให้กดปุ่ม </span>Browse <span lang="TH">เพื่อเลือกไฟล์ที่จะเชื่อมโยงไปยังจุดปลายทาง</span><o:p></o:p></span></div>
+<br>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="../image/8.18.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="249" src="../image/8.18.jpg" width="320"></a></div>
+<br>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 3. <span lang="TH">จะปรากฏหน้าต่าง
+</span>Select File <span lang="TH">ให้เลือกโฟลเดอร์ที่เก็บไฟล์</span><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+4. <span lang="TH">เลือกไฟล์ที่ต้องการ</span><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+5. <span lang="TH">คลิกที่ปุ่ม </span>OK<o:p></o:p></span></div>
+<br>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="../image/8.19.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="186" src="../image/8.19.jpg" width="320"></a></div>
+<br>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 6. <span lang="TH">ช่อง </span>Target <span lang="TH">กำหนดลักษณะการแสดงผลของเว็บเพจ</span><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+- top <span lang="TH">เป็นการเปิดหน้าเว็บเพจใหม่ ในเฟรมชื่อ </span>top<o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+- left <span lang="TH">เป็นการเปิดหน้าเว็บเพจใหม่ ในเฟรมชื่อ </span>left<o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+- body <span lang="TH">เป็นการเปิดหน้าเว็บเพจใหม่ ในเฟรมชื่อ </span>body<o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+7. <span lang="TH">ทดสอบการเชื่อมโยง โดยกดปุ่ม </span>F12 <span lang="TH">เพื่อดูการแสดงผลจากเว็บเบราว์เซอร์</span><o:p></o:p></span></div>
+<div align="center" class="MsoNormal" style="margin-bottom: 0.0001pt; text-align: center;">
+<br></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;"><!--[if gte vml 1]><v:shapetype
+ id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t"
+ path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="ร&#3641;ปภาพ_x0020_3" o:spid="_x0000_i1025" type="#_x0000_t75"
+ alt="คำอธ&#3636;บาย: http://www.kruwan-d.info/images/k02-3.gif" style='width:12pt;
+ height:12pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="file:///C:\Users\Admin\AppData\Local\Temp\msohtmlclip1\01\clip_image001.gif"
+  o:title="k02-3"/>
+</v:shape><![endif]--><!--[if !vml]--><!--[endif]--></span><span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;</span><b><span lang="TH" style="color: green; font-family: &quot;th sarabunpsk&quot; , &quot;sans-serif&quot;; font-size: 16.0pt;">การบันทึกเฟรม</span></b><span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;"><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span lang="TH">เฟรมเซต ประกอบด้วยหน้าเว็บเพจที่แสดงในแต่ละเฟรม
+ในการบันทึกจะต้องบันทึกให้ครบทุกเว็บเพจที่แสดงในแต่ละเฟรม</span><o:p></o:p></span></div>
+<br>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="../image/8.20.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="168" src="../image/8.20.jpg" width="320"></a></div>
+<br>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+1. <span lang="TH">คลิกที่หน้าเว็บในแต่ละเฟรม</span></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2. <span lang="TH">จะแสดงชื่อของไฟล์เว็บเพจ</span><o:p></o:p></span></div>
+<br>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="../image/8.22.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="168" src="../image/8.22.jpg" width="320"></a></div>
+<a href="https://www.blogger.com/blogger.g?blogID=6213038047236223212" imageanchor="1" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;"></a><br>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 3. <span lang="TH">คลิกที่เมนู </span>File <span lang="TH">แล้วเลือก </span>Save
+Frame As... (<span lang="TH">เพื่อบันทึกให้ครบทุกเว็บเพจในแต่ละเฟรม)</span><o:p></o:p></span></div>
+<br>
+<div class="MsoNormal">
+<br>
+</div>
+<br>
+<div style="clear: both;"></div>
+</div>
+
+
+
+
+
+</td>
+  </tr>
+  
+  
+  
+  
+  
+  
+ <tr>
+    <td height="113" colspan="2" align="center" bgcolor="#FFFFFF"><img src="../image/ล่าง.jpg" width="1280" height="328" usemap="#Map"></td>
+  </tr>
+</table>
+
+<map name="Map">
+  <area shape="rect" coords="394,58,431,74" href="index.html">
+  <area shape="rect" coords="394,86,535,103" href="page2.html">
+  <area shape="rect" coords="394,113,440,130" href="page3.1.html">
+  <area shape="rect" coords="394,139,486,158" href="page4.1.html">
+  <area shape="rect" coords="667,58,731,75" href="page5.html">
+  <area shape="rect" coords="988,253,1028,294" href="https://www.facebook.com/bankbow200858/">
+  <area shape="rect" coords="940,253,982,293" href="https://line.me/ti/p/UYBHxlnRK-">
+</map>
+</body>
+
+
+
+
+</html>
