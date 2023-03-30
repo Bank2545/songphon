@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>สื่อการเรียนการสอนการสร้างเว็บไซต์</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <style type="text/css">
+  body {
+    background-repeat: repeat;
+    margin-left: 0px;
+    margin-right: 0px;
+    background-image: url(../image/BG.jpg);
+    background-color: #FFFFFF;
+}
+  body,td,th {
+	color: #000000;
+}
+  </style>
+	
+	<SCRIPT src="jquery-1.4.2.min.js" type=text/javascript></SCRIPT>
+	<script type="text/javascript" src="scrolltopcontrol.js"></script>
+	<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+    </script>
+</head>
+
+<body class="align-content-md-start" onLoad="MM_preloadImages('../image/น3.3.jpg','../image/น1.1.jpg','../image/น2.2.jpg','../image/น4.4.jpg','../image/น5.5.jpg','../image/น6.6.jpg','../image/น7.7.jpg','../image/น8.jpg')">
+<table width="200" border="0" align="center">
+  <tbody>
+    <tr>
+      <td align="center" valign="top"><div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner" style="width: 1280px; height: 500px;">
+    <div class="carousel-item active">
+      <img src="../image/PSD_1.1.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="../image/PSD_1.2.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="../image/PSD_1.3.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+	  </td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+	<!-- bootstrap@5.1.0 -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+    crossorigin="anonymous"></script>
+
+<table width="1283" border="0" align="center">
+    <tr>
+      <td width="282"><nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    	<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      		<span class="navbar-toggler-icon"></span>
+    	</button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        	<li class="nav-item">
+          		<a class="btn btn-outline-success" aria-current="page" href="index.html">• หน้าแรก</a>
+       		</li>
+            &nbsp;&nbsp;
+        	<li class="nav-item">
+          		<a class="btn btn-outline-success" href="page2.html">• จุดประสงค์การเรียนรู้</a>
+        	</li>
+            &nbsp;&nbsp;
+        	<li class="nav-item dropdown">
+          		<a class="btn btn-outline-success dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            • บทเรียน
+          		</a>
+       <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="page3.1.html">• บทเรียนที่ 1</a></li>
+            <li><a class="dropdown-item" href="page3.2.html">• บทเรียนที่ 2</a></li>
+		    <li><a class="dropdown-item" href="page3.3.html">• บทเรียนที่ 3</a></li>
+		    <li><a class="dropdown-item" href="page3.4.html">• บทเรียนที่ 4</a></li>
+		    <li><a class="dropdown-item" href="page3.5.html">• บทเรียนที่ 5</a></li>
+		    <li><a class="dropdown-item" href="page3.6.html">• บทเรียนที่ 6</a></li>
+		    <li><a class="dropdown-item" href="page3.7.html">• บทเรียนที่ 7</a></li>
+		    <li><a class="dropdown-item" href="page3.8.html">• บทเรียนที่ 8</a></li>
+		    <li><a class="dropdown-item" href="page3.9.html">• บทเรียนที่ 9</a></li>
+			<li><a class="dropdown-item" href="page3.10.html">• บทเรียนที่ 10</a></li>
+            <li><hr class="dropdown-divider"></li>
+       </ul>
+        	</li>
+		  &nbsp;&nbsp;
+		  <li class="nav-item dropdown">
+          		<a class="btn btn-outline-success dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            • คลิปการสอน
+          		</a>
+       <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="page4.1.html">• การสร้าง Site งานเว็บไซต์</a></li>
+            <li><a class="dropdown-item" href="page4.2.html">• การแทรกวิดีโอและการแทรกแผนที่</a></li>
+		    <li><a class="dropdown-item" href="page4.3.html">• การเชื่อมโยงเว็บเพจ</a></li>
+		    <li><a class="dropdown-item" href="page4.4.html">• การสร้าง Spry menu Bar</a></li>
+		    <li><a class="dropdown-item" href="page4.5.html">• การสร้างปุ่ม Rollover</a></li>
+            <li><hr class="dropdown-divider"></li>
+       </ul>
+        	</li>
+            &nbsp;&nbsp;
+        	<li class="nav-item">
+         		 <a class="btn btn-outline-success" href="page5.html">• ติดต่อเรา</a>
+       		</li>
+      </ul>
+    </div>
+  </div>
+</nav>
+	  </td>
+    </tr>
+</table>
+<table width="1282" height="1773" border="0" align="center">
+  <tr>
+    <td width="275" height="1573" align="center" valign="top" bgcolor="#FFFFFF">
+    <div style="overflow:auto; height:4000px; width:220px;">
+    <center>
+      <table width="0" border="0">
+      <br>
+        <tr>
+          <td><a href="page3.1.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('น1','','../image/น1.1.jpg',1)"><img src="../image/น1.jpg" width="180" height="240" id="น1"></a></td>
+        </tr>
+        <tr>
+          <td><a href="page3.2.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('น2','','../image/น2.2.jpg',1)"><img src="../image/น2.jpg" width="180" height="240" id="น2"></a></td>
+        </tr>
+        <tr>
+          <td><a href="page3.3.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('น3','','../image/น3.3.jpg',0)"><img src="../image/น3.jpg" width="180" height="240" id="น3"></a></td>
+        </tr>
+        <tr>
+          <td><a href="page3.4.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('น4','','../image/น4.4.jpg',1)"><img src="../image/น4.jpg" width="180" height="240" id="น4"></a></td>
+        </tr>
+        <tr>
+          <td><a href="page3.5.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('น5','','../image/น5.5.jpg',1)"><img src="../image/น5.jpg" width="180" height="240" id="น5"></a></td>
+        </tr>
+        <tr>
+          <td><a href="page3.6.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('น6','','../image/น6.6.jpg',1)"><img src="../image/น6.jpg" width="180" height="240" id="น6"></a></td>
+        </tr>
+        <tr>
+          <td><a href="page3.7.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('น7','','../image/น7.7.jpg',1)"><img src="../image/น7.jpg" width="180" height="240" id="น7"></a></td>
+        </tr>
+        <tr>
+          <td><a href="page3.8.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('น8','','../image/น8.jpg',1)"><img src="../image/น8.8.jpg" width="180" height="240" id="น8"></a></td>
+        </tr>
+        <tr>
+          <td><a href="page3.9.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('น9','','../image/น9.9.jpg',1)"><img src="../image/น9.jpg" width="180" height="240" id="น9"></a></td>
+        </tr>
+        <tr>
+          <td><a href="page3.10.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('น10','','../image/น10.10.jpg',1)"><img src="../image/น10.jpg" width="180" height="240" id="น10"></a></td>
+        </tr>
+        <tr>
+          <td><a href="page4.1.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('ค1','','../image/ค1.1.jpg',1)"><img src="../image/ค1.jpg" width="180" height="240" id="ค1"></a></td>
+        </tr>
+        <tr>
+          <td><a href="page4.2.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('ค2','','../image/ค2.2.jpg',1)"><img src="../image/ค2.jpg" name="ค2" width="180" height="240" id="ค2"></a></td>
+        </tr>
+        <tr>
+          <td><a href="page4.3.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('ค3','','../image/ค3.3.jpg',1)"><img src="../image/ค3.jpg" name="ค3" width="180" height="240" id="ค3"></a></td>
+        </tr>
+        <tr>
+          <td><a href="page4.4.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('ค4','','../image/ค4.4.jpg',1)"><img src="../image/ค4.jpg" width="180" height="240" id="ค4"></a></td>
+        </tr>
+        <tr>
+          <td><a href="page4.5.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('ค5','','../image/ค5.5.jpg',0)"><img src="../image/ค5.jpg" name="ค5" width="180" height="240" id="ค5"></a></td>
+        </tr>
+        
+      </table>
+      
+      <p>&nbsp;</p>
+    
+    </center>
+      </div>
+      
+      
+      
+      
+      
+      
+    </td>
+    
+    
+    <td width="1001" align="left" valign="top" bgcolor="#FFFFFF"><p>&nbsp;&nbsp;</p>
+    <h3 class="post-title entry-title" itemprop="name"><span class="post-body entry-content"><b><span lang="TH" style="color: #CC33FF; font-family: &quot;th sarabunpsk&quot; , &quot;sans-serif&quot;; font-size: 16.0pt;">หน่วยการเรียนรู้ที่ 7 การเชื่อมโยงระหว่างเว็บเพจ</span></b><span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">
+    <o:p></o:p>
+</span></span></h3>
+<div class="post-header">
+<div class="post-header-line-1"></div>
+</div>
+
+
+
+<div class="post-body entry-content" id="post-body-6658355049444434542" itemprop="description articleBody">
+<b><span lang="TH" style="color: green; font-family: &quot;th sarabunpsk&quot; , &quot;sans-serif&quot;; font-size: 16.0pt;">การเชื่อมโยงภายในหน้าเว็บเพจ</span></b><br>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+</div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span lang="TH">ในกรณีที่เว็บเพจมีเนื้อหาและมีขนาดยาวมาก
+ทำให้ต้องใช้เมาส์เลื่อนแถบ </span>Scroll bar <span lang="TH">เราสามารถสร้างการเชื่อมโยงภายในเว็บเพจ
+เพื่อให้สะดวกในการดูเนื้อหาในหน้าเว็บเพจ มีวิธีการดังนี้</span><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<br></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><b><span lang="TH" style="color: #ff6600; font-family: &quot;th sarabunpsk&quot; , &quot;sans-serif&quot;; font-size: 16.0pt;">กำหนดจุดเป้าหมาย ที่ต้องการจะเชื่อมโยง</span></b><span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;"><o:p></o:p></span></div>
+<br>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="../image/7.1.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="141" src="../image/7.1.jpg" width="320"></a></div>
+<br>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 1. <span lang="TH">คลิกวางเคอร์เซอร์ตรงตำแหน่งที่ต้องการ</span><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2. <span lang="TH">คลิกที่เมนู</span>Insert<span lang="TH">แล้วเลือก</span>NamedAnchor<span lang="TH">หรือกดปุ่ม</span>Ctrl+Alt + A</span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+3.&nbsp;</span><span lang="TH" style="font-family: &quot;th sarabunpsk&quot; , &quot;sans-serif&quot;; font-size: 16pt;">หรือ แถบ </span><span style="font-family: &quot;th sarabunpsk&quot; , &quot;sans-serif&quot;; font-size: 16pt;">Insert <span lang="TH">ให้เลือก </span>Common <span lang="TH">แล้วคลิก </span>Named Anchor</span><span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;"><o:p></o:p></span></div>
+<br>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="../image/7.2.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="129" src="../image/7.2.jpg" width="320"></a></div>
+<br>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 4. <span lang="TH">จะปรากฏหน้าต่าง
+</span>Named Anchor <span lang="TH">ให้ตั้งชื่อจุดเชื่อมโยง แล้วคลิกที่ปุ่ม </span>OK</span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+5. <span lang="TH">จะปรากฏสัญลักษณ์การเชื่อมโย</span></span><a href="../image/7.4.gif" imageanchor="1" style="font-family: 'TH SarabunPSK', sans-serif; font-size: 16pt; margin-left: 1em; margin-right: 1em; text-align: center;"><img border="0" src="../image/7.4.gif"></a><span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;</span><span lang="TH" style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">ดังรูป</span><span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;"><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span lang="TH" style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;"><br></span></div>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="../image/7.3.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="106" src="../image/7.3.jpg" width="320"></a></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<br></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<b><span lang="TH" style="color: #ff6600; font-family: &quot;th sarabunpsk&quot; , &quot;sans-serif&quot;; font-size: 16.0pt;">การสร้างจุดเชื่อมโยงไปยังเป้าหมาย</span></b><span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;"><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<br></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span lang="TH" style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">
+
+
+
+</span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span lang="TH">การกำหนดตำแหน่งการสร้างจุดเชื่อมโยง
+อาจใช้ข้อความหรือรูปภาพเป็นจุดเชื่อมโยงก็ได้</span><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;"><span lang="TH"><br></span></span></div>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="../image/7.5.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="167" src="../image/7.5.jpg" width="320"></a></div>
+<br>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 1. <span lang="TH">เลือกข้อความหรือรูปภาพที่จะสร้างเป็นจุดเชื่อมโยง</span><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2. <span lang="TH">คลิกที่ปุ่ม </span>HTML<o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+3. <span lang="TH">ช่อง </span>Link <span lang="TH">ให้พิมพ์เครื่องหมาย </span># <span lang="TH">แล้วตามด้วยชื่อจุดเป้าหมาย (ตามหัวข้อ</span>&nbsp;</span><b><span lang="TH" style="color: blue; font-family: &quot;th sarabunpsk&quot; , &quot;sans-serif&quot;; font-size: 16.0pt;">กำหนดจุดเป้าหมาย
+ที่ต้องการจะเชื่อมโยง</span></b><span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">)<o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+4. <span lang="TH">ทดสอบการแสดงผลจากเว็บเบราว์เซอร์ โดยกดปุ่ม </span>F12<o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<br></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<b><span style="color: #ff6600; font-family: &quot;th sarabunpsk&quot; , &quot;sans-serif&quot;; font-size: 16.0pt;">&nbsp;&nbsp;</span></b><span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;</span><b><span lang="TH" style="color: green; font-family: &quot;th sarabunpsk&quot; , &quot;sans-serif&quot;; font-size: 16.0pt;">การเชื่อมโยงภายในเว็บไซต์</span></b><span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;"><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<br></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span lang="TH">การจัดทำเว็บไซต์ ซึ่งประกอบไปด้วยหลาย ๆ เว็บเพจ
+แต่ละเว็บเพจสามารถเชื่อมโยงกันได้ มีวิธีการดังนี้</span><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span lang="TH" style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<br></div>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="../image/7.6.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="214" src="../image/7.6.jpg" width="320"></a></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<br></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 1. <span lang="TH">เลือกข้อความหรือรูปภาพที่ต้องการใช้เป็นจุดเชื่อมโยง</span><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span lang="TH" style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">
+
+</span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2. <span lang="TH">ที่ </span>Properties Inspector <span lang="TH">ในช่อง </span>Link
+<span lang="TH">ให้คลิกที่ปุ่ม </span>Browse <span lang="TH">เพื่อเลือกไฟล์ที่จะทำการเชื่อมโยง</span><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span lang="TH" style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;"><br></span></div>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="../image/7.7.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="319" src="../image/7.7.jpg" width="320"></a></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span lang="TH" style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;"><br></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 3. <span lang="TH">จะปรากฏหน้าต่าง
+</span>Select File <span lang="TH">ให้เลือกโฟลเดอร์ที่เก็บไฟล์เว็บเพจ</span>
+<o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+4. <span lang="TH">เลือกไฟล์เว็บเพจที่ต้องการจะเชื่อมโยง</span><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+</div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+5. <span lang="TH">คลิกที่ปุ่ม </span>OK<o:p></o:p></span></div>
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span lang="TH" style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;"><br></span></div>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="../image/7.8.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="276" src="../image/7.8.jpg" width="320"></a></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<br></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 6. <span lang="TH">ช่อง </span>Link <span lang="TH">จะปรากฏไฟล์เว็บเพจที่เลือก</span><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+7. <span lang="TH">ช่อง </span>Target <span lang="TH">เป็นการกำหนดวิธีเปิดหน้าเว็บที่เชื่อมโยง
+ดังนี้</span><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+_blank <span lang="TH">ให้เปิดหน้าเว็บที่เชื่อมโยงในหน้าต่างเบราว์เซอร์ใหม่</span><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+new <span lang="TH">ให้เปิดหน้าเว็บที่เชื่อมโยงในหน้าต่างเบราว์เซอร์ใหม่อีกหน้าต่าง</span><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+_parent <span lang="TH">ให้เปิดหน้าเว็บที่เชื่อมโยงในหน้าต่างเบราว์เซอร์เดิม</span><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+_self <span lang="TH">ให้เปิดหน้าเว็บที่เชื่อมโยงในเฟรมเดิม</span><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+_top <span lang="TH">ให้เปิดหน้าเว็บที่เชื่อมโยงในหน้าต่างเบราว์เซอร์เดิม
+โดยจัดให้เต็มเฟรม</span><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+8. <span lang="TH">ทดสอบการเชื่อมโยง โดยกดปุ่ม </span>F12 <span lang="TH">เพื่อดูการแสดงผลจากเว็บเบราว์เซอร์
+แล้วคลิกจุดเชื่อมโยง</span><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<br></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;</span><b><span lang="TH" style="color: green; font-family: &quot;th sarabunpsk&quot; , &quot;sans-serif&quot;; font-size: 16.0pt;">การเชื่อมโยงภายนอกเว็บไซต์</span></b><span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;"><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<br></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span lang="TH" style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span lang="TH">การเชื่อมโยงไปยังเว็บไซต์อื่น ๆ ที่อยู่ภายนอก เพื่อต้องการให้ผู้ชมเว็บไซต์ของเราสามารถศึกษาข้อมูลเพิ่มเติมได้
+มีวิธีการดังนี้</span><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span lang="TH" style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;"><br></span></div>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="../image/7.9.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="208" src="../image/7.9.jpg" width="320"></a></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<br></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 1. <span lang="TH">เลือกข้อความหรือรูปภาพที่ต้องการใช้เป็นจุดเชื่อมโยง</span><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2. <span lang="TH">ที่ </span>Properties Inspector <span lang="TH">ในช่อง </span>Link
+<span lang="TH">ให้พิมพ์ชื่อ </span>URL <span lang="TH">ของเว็บไซต์ที่เราต้องการเชื่อมโยง
+โดยพิมพ์คำว่า </span>http:// <span lang="TH">แล้วตามด้วยชื่อของเว็บไซต์ เช่น </span>http://www.dkd.ac.th<o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<br></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;</span><b><span lang="TH" style="color: green; font-family: &quot;th sarabunpsk&quot; , &quot;sans-serif&quot;; font-size: 16.0pt;">การเชื่อมโยงไปยังอีเมล</span></b><span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;"><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<br></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span lang="TH" style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">
+
+
+
+
+
+
+
+
+
+</span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span lang="TH">การเชื่อมโยงไปยังอีเมล
+เป็นช่องทางในการสื่อสารสำหรับให้ผู้ต้องการจะติดต่อผ่านอีเมลได้อย่างสะดวก
+รวดเร็วขึ้น มีวิธีการดังนี้</span><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span lang="TH" style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;"><br></span></div>
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="../image/7.10.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="208" src="../image/7.10.jpg" width="320"></a></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<br></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 1. <span lang="TH">เลือกข้อความหรือรูปภาพที่ต้องการใช้เป็นจุดเชื่อมโยง</span>
+<o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2. <span lang="TH">ที่ </span>Properties Inspector <span lang="TH">ในช่อง </span>Link
+<span lang="TH">ให้พิมพ์ชื่อ </span>URL <span lang="TH">ของเว็บไซต์ที่เราต้องการเชื่อมโยง
+โดยพิมพ์คำว่า </span>mailto: <span lang="TH">แล้วตามด้วยชื่อของเว็บไซต์ เช่น </span>mailto:admin@dkd.ac.th<o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<br></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;</span><b><span lang="TH" style="color: green; font-family: &quot;th sarabunpsk&quot; , &quot;sans-serif&quot;; font-size: 16.0pt;">การเชื่อมโยงเพื่อดาวน์โหลด</span></b><span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;"><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<br></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span lang="TH">การเชื่อมโยงเพื่อดาวน์โหลดมีจุดประสงค์
+เพื่อต้องการเชื่อมโยงไปยังแฟ้มข้อมูล เช่น ไฟล์รูปภาพ ไฟล์เอกสาร หรือไฟล์อื่น ๆ
+มีวิธีการดังนี้</span><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span lang="TH" style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">
+
+
+
+
+
+
+
+
+
+
+
+
+
+</span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<br></div>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="../image/7.11.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="208" src="../image/7.11.jpg" width="320"></a></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<br></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 1. <span lang="TH">เลือกข้อความหรือรูปภาพที่ต้องการใช้เป็นจุดเชื่อมโยง</span><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span lang="TH" style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">
+
+</span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2. <span lang="TH">ที่ </span>Properties Inspector <span lang="TH">ในช่อง </span>Link
+<span lang="TH">ให้คลิกที่ปุ่ม </span>Browse <span lang="TH">เพื่อเลือกไฟล์ที่จะทำการเชื่อมโยงเพื่อดาวน์โหลด</span><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;"><span lang="TH"><br></span></span></div>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://3.bp.blogspot.com/-1VFxsoU4MsM/V9awxlsChGI/AAAAAAAAALo/0RI1mG811C8LXwz1TUYk5bgRiyMqfmVAwCLcB/s1600/1.gif.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"></a><a href="https://www.blogger.com/blogger.g?blogID=6213038047236223212" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"></a><a href="../image/7.12.jpg"><img border="0" height="259" src="../image/7.12.jpg" width="320"></a></div>
+<br>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 3. <span lang="TH">จะปรากฏหน้าต่าง </span>Select File <span lang="TH">ให้เลือกโฟลเดอร์ที่เก็บไฟล์</span><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+4. <span lang="TH">เลือกไฟล์ที่ต้องการ</span><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+5. <span lang="TH">คลิกที่ปุ่ม </span>OK<o:p></o:p></span></div>
+<div align="center" class="MsoNormal" style="margin-bottom: 0.0001pt; text-align: center;">
+<br></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;</span><b><span lang="TH" style="color: green; font-family: &quot;th sarabunpsk&quot; , &quot;sans-serif&quot;; font-size: 16.0pt;">การเชื่อมโยงด้วย </span></b><b><span style="color: green; font-family: &quot;th sarabunpsk&quot; , &quot;sans-serif&quot;; font-size: 16.0pt;">Map Link</span></b><span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;"><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<br></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span lang="TH">การเชื่อมโยงด้วย </span>Map Link <span lang="TH">เป็นการกำหนดขอบเขตของการเชื่อมโยงบนรูปภาพ
+เฉพาะส่วนที่ต้องการ ซึ่งพื้นที่การเชื่อมโยงเป็นรูปสี่เหลี่ยม รูปวงกลม
+หรือรูปหลายเหลี่ยม มีวิธีการดังนี้</span><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+</div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<br></div>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="../image/7.13.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="216" src="../image/7.13.jpg" width="320"></a></div>
+<br>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. <span lang="TH">คลิกเลือกรูปภาพที่ต้องการให้เชื่อมโยง</span><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;"><span lang="TH"><br></span></span></div>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="../image/7.14.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="217" src="../image/7.14.jpg" width="320"></a></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<br></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. <span lang="TH">คลิกเลือกเครื่องมือใน </span>Properties Inspector
+<o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. <span lang="TH">กำหนดพื้นที่ ที่ต้องการจะสร้างจุดเชื่อมโยง</span><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4. <span lang="TH">ในช่อง&nbsp;</span>Link&nbsp;<span lang="TH">ให้พิมพ์ชื่อเว็บไซต์หรือเลือกไฟล์ที่ต้องการจะเชื่อมโยง</span><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<br></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;</span><b><span lang="TH" style="color: green; font-family: &quot;th sarabunpsk&quot; , &quot;sans-serif&quot;; font-size: 16.0pt;">การเชื่อมโยงด้วย </span></b><b><span style="color: green; font-family: &quot;th sarabunpsk&quot; , &quot;sans-serif&quot;; font-size: 16.0pt;">Rollover Image</span></b><span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;"><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<br></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Rollover Image <span lang="TH">เป็นการสลับรูปภาพที่แสดง
+ภาพหนึ่งเป็นภาพก่อนวางเมาส์ ส่วนอีกภาพสำหรับให้ปรากฏตอนวางเมาส์เหนือภาพนั้น
+มีวิธีการดังนี้</span><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+</div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<br></div>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="../image/7.15.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="162" src="../image/7.15.jpg" width="320"></a></div>
+<br>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;1. <span lang="TH">คลิกเมาส์วางเคอร์เซอร์ตรงตำแหน่งที่ต้องการ</span><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. <span lang="TH">คลิกที่เมนู </span>Insert <span lang="TH">คลิกที่ </span>Image
+Objects <span lang="TH">แล้วเลือก </span>Rollover Image<o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. <span lang="TH">จะปรากฏหน้าต่าง </span>Insert Rollover Image <span lang="TH">ให้กำหนดค่าต่างๆ
+ดังนี้</span><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span lang="TH" style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">
+
+
+
+
+
+</span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<br></div>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="../image/7.17.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="149" src="../image/7.17.jpg" width="320"></a></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<br></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<b>Image
+Name</b>&nbsp;: <span lang="TH">ชื่อของรูปภาพ</span><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Original
+image</b>&nbsp;: <span lang="TH">การกำหนดรูปภาพแรกที่จะแสดง</span><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Rollover
+image</b>&nbsp;: <span lang="TH">การกำหนดรูปภาพที่ </span>2 <span lang="TH">ที่จะแสดง
+เมื่อนำเมาส์วางเหนือรูปภาพ</span><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Alternate
+text</b>&nbsp;: <span lang="TH">การกำหนดข้อความกำกับรูปภาพ</span><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<a href="https://www.blogger.com/blogger.g?blogID=6213038047236223212" imageanchor="1" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;"></a><span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>When
+clicked, Go to URL</b>&nbsp;: <span lang="TH">กำหนดไฟล์หรือ </span>URL <span lang="TH">ที่ต้องการจะเชื่อมโยง</span></span><br>
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;"><span lang="TH"><br></span></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+4. <span lang="TH">เมื่อกำหนดค่าต่าง ๆ เสร็จเรียบร้อยแล้ว จะได้ดังรูป</span><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span lang="TH" style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">
+
+
+
+
+
+
+
+
+
+
+
+
+
+</span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<br></div>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="../image/7.18.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="174" src="../image/7.18.jpg" width="320"></a></div>
+<br>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 5. <span lang="TH">ทดสอบการเชื่อมโยง โดยกดปุ่ม </span>F12 <span lang="TH">เพื่อดูการแสดงผลจากเว็บเบราว์เซอร์</span><o:p></o:p></span></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+<span lang="TH" style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;">
+
+</span></div>
+<div class="MsoNormal">
+<a href="https://www.blogger.com/blogger.g?blogID=6213038047236223212" imageanchor="1" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;"></a><br></div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+  <p>&nbsp;</p>
+  <p><span lang="TH" style="font-family: &quot;th sarabunpsk&quot; , sans-serif; font-size: 16pt;"><br>
+  </span></p>
+</div>
+<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
+
+
+
+
+
+
+</td>
+  </tr>
+  
+  
+  
+  
+  
+  
+  
+<tr>
+    <td height="113" colspan="2" align="center" bgcolor="#FFFFFF"><img src="../image/ล่าง.jpg" width="1280" height="328" usemap="#Map"></td>
+  </tr>
+</table>
+
+<map name="Map">
+  <area shape="rect" coords="394,58,431,74" href="index.html">
+  <area shape="rect" coords="394,86,535,103" href="page2.html">
+  <area shape="rect" coords="394,113,440,130" href="page3.1.html">
+  <area shape="rect" coords="394,139,486,158" href="page4.1.html">
+  <area shape="rect" coords="667,58,731,75" href="page5.html">
+  <area shape="rect" coords="988,253,1028,294" href="https://www.facebook.com/bankbow200858/">
+  <area shape="rect" coords="940,253,982,293" href="https://line.me/ti/p/UYBHxlnRK-">
+</map>
+</body>
+
+
+
+
+
+
+
+</html>
